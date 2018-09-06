@@ -1,5 +1,57 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+</head>
+<style>
+.one{
+margin: 0 auto;
+padding: 0px;
+width: 500px;
+height: 500px;
+background-color: rgba(0,0,45,0.5);
+}
+.two{
+width: 160px;
+height: 160px;
+margin: 0 auto;
+background-color: red;
+position: relative;
+top: 150px;
+}
+.two:before{
+content: "";
+display: block;
+width: 160px;
+height: 160px;
+border-radius: 50%;
+background-color: red;
+position: relative;
+top: -80px;
+
+
+}
+.two:after{
+content: "";
+display: block;
+width: 160px;
+height: 160px;
+border-radius: 50%;
+background-color: red;
+position:relative;
+right: -80px;
+top: -160px;
+}
+.two{
+transform: rotate(-45deg);
+}
+</style>
 <body>
-<h1>相册</h1>
+<div class="one">
+<div class="two">
+
+</div>
+</div>
 </body>
 </html>
